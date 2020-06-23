@@ -9,10 +9,33 @@ let h_full = window.innerHeight;
 let w_full = window.innerWidth;
 
 
-tl1.to("#circle-b", 0.1, { y: -(h_full / 6), x:- (w_full/16) })
-tl2.to("#circle-c", 0.1, { y: -(h_full / 6), x: (w_full/16) })
+console.log(w_full , h_full);
+
+
 tl3.to("#block-2", 0.1,  { y: -(h_full / 20), x: (w_full/26) })
 tl4.to("#block-3", 0.1,  { y: -(h_full / 20), x: -(w_full/26) })
+
+
+
+// Responsive 
+
+
+if (w_full <= 500) {
+    tl1.to("#circle-b", 0.1, { y: -(h_full / 20), x: - (w_full / 16) })
+    tl2.to("#circle-c", 0.1, { y: -(h_full / 20), x: (w_full / 16) })
+} 
+
+
+else if ((h_full > 1300 && w_full < 1300) || (h_full >= 768 && w_full <= 768) ){
+    tl1.to("#circle-b", 0.1, { y: -(h_full / 10), x: - (w_full / 16) })
+    tl2.to("#circle-c", 0.1, { y: -(h_full / 10), x: (w_full / 16) })
+}
+
+
+else {
+    tl1.to("#circle-b", 0.1, { y: -(h_full / 6), x: - (w_full / 16) })
+    tl2.to("#circle-c", 0.1, { y: -(h_full / 6), x: (w_full / 16) })
+}
 
 const scene = new ScrollMagic.Scene({
     triggerElement: "#section-1",
