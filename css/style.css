@@ -19,6 +19,7 @@
 
 a{
     text-decoration: none;
+    font-size: 1.5vw;
 }
 
 a:visited {
@@ -174,3 +175,217 @@ opacity: 1;}
 opacity: 1;}
 }
 
+/* Responsive  */
+
+@media only screen and (max-width: 1300px) and (min-height: 1300px) {
+  body {
+    background-color: lightblue !important;
+  }
+
+  #circle-a{
+
+    top: 75vh;
+
+}
+#circle-b{
+
+    top: 92vh ;
+
+}
+#circle-c{
+
+    top: 92vh;
+
+}
+
+.head{
+    top: 87vh !important;
+
+}
+ .line{
+
+    top: calc(87vh + 2px) !important;
+
+} 
+.tail{
+
+    top: calc(87vh + 20vw + 2px) !important ;
+
+} 
+
+
+}
+
+
+@media only screen and (max-width: 768px) and (min-height: 768px) {
+  body {
+    background-color: aqua !important;
+  }
+
+  #circle-a{
+
+    top: 75vh;
+
+}
+#circle-b{
+
+    top: 92vh ;
+
+}
+#circle-c{
+
+    top: 92vh;
+
+}
+
+.head{
+    top: 87vh;
+
+}
+ .line{
+
+    top: calc(87vh + 2px);
+
+} 
+.tail{
+
+    top: calc(87vh + 20vw + 2px) ;
+
+} 
+
+
+}
+
+@media only screen and (max-width: 500px){
+  body {
+    background-color: red !important;
+  }
+
+  #circle-a{
+
+    top: 85vh;
+
+}
+#circle-b{
+
+    top: 95vh ;
+
+}
+#circle-c{
+
+    top: 95vh;
+
+}
+
+.head{
+    top: 92.5vh;
+
+}
+ .line{
+
+    top: calc(92.5vh + 2px);
+
+} 
+.tail{
+
+    top: calc(92.5vh + 20vw + 2px) ;
+
+} 
+
+.text-content{
+    width:80%;
+}
+
+}
+
+
+@media only screen and (min-width: 1000px)  and (max-width: 1100px)  and (min-height: 550px) {
+
+    body{
+        background-color: purple;
+    }
+
+.head{
+    top: 78vh;
+
+}
+ .line{
+
+    top: calc(78vh + 2px);
+
+} 
+.tail{
+
+    top: calc(78vh + 20vw + 2px) ;
+
+} 
+
+}
+
+
+@media only screen and (min-width: 1300px)  and (max-width: 1500px)  and (min-height: 750px) {
+
+    body{
+        background-color: green;
+    }
+
+.head{
+    top: 80vh;
+
+}
+ .line{
+
+    top: calc(80vh + 2px);
+
+} 
+.tail{
+
+    top: calc(80vh + 20vw + 2px) ;
+
+} 
+
+}
+
+
+@media only screen and (min-width: 1600px)  and (max-width: 1800px)  and (min-height: 950px) {
+
+    body{
+        background-color: green;
+    }
+
+.head{
+    top: 78vh;
+
+}
+ .line{
+
+    top: calc(78vh + 2px);
+
+} 
+.tail{
+
+    top: calc(78vh + 20vw + 2px) ;
+
+} 
+
+}
+
+@media only screen and (min-width: 2000px)  and (min-height: 1150px) {
+
+
+.head{
+    top: 78vh;
+
+}
+ .line{
+
+    top: calc(78vh + 2px);
+
+} 
+.tail{
+
+    top: calc(78vh + 20vw + 2px) ;
+
+} 
+
+}
