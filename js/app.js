@@ -10,7 +10,7 @@ let w_full = window.innerWidth;
 
 
 console.log(w_full , h_full);
-
+console.log(window.orientation);
 
 tl3.to("#block-2", 0.1,  { y: -(h_full / 20), x: (w_full/26) })
 tl4.to("#block-3", 0.1,  { y: -(h_full / 20), x: -(w_full/26) })
@@ -20,10 +20,25 @@ tl4.to("#block-3", 0.1,  { y: -(h_full / 20), x: -(w_full/26) })
 // Responsive 
 
 
-if (w_full <= 500) {
+if (w_full <= 500 && window.orientation !== undefined ) {
     tl1.to("#circle-b", 0.1, { y: -(h_full / 20), x: - (w_full / 16) })
     tl2.to("#circle-c", 0.1, { y: -(h_full / 20), x: (w_full / 16) })
 } 
+
+else if (w_full <= 500 && window.orientation === undefined ) {
+    tl1.to("#circle-b", 0.1, { y: -(h_full / 14), x: - (w_full / 20) })
+    tl2.to("#circle-c", 0.1, { y: -(h_full / 14), x: (w_full / 20) })
+} 
+
+else if (w_full <= 768 && window.orientation === undefined) {
+    tl1.to("#circle-b", 0.1, { y: -(h_full / 14), x: - (w_full / 16) })
+    tl2.to("#circle-c", 0.1, { y: -(h_full / 14), x: (w_full / 16) })
+}
+
+else if (w_full <= 1024) {
+    tl1.to("#circle-b", 0.1, { y: -(h_full / 10), x: - (w_full / 18) })
+    tl2.to("#circle-c", 0.1, { y: -(h_full / 10), x: (w_full / 18) })
+}
 
 
 else if ((h_full > 1300 && w_full < 1300) || (h_full >= 768 && w_full <= 768) ){
@@ -36,6 +51,11 @@ else {
     tl1.to("#circle-b", 0.1, { y: -(h_full / 6), x: - (w_full / 16) })
     tl2.to("#circle-c", 0.1, { y: -(h_full / 6), x: (w_full / 16) })
 }
+
+
+
+
+
 
 const scene = new ScrollMagic.Scene({
     triggerElement: "#section-1",
